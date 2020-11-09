@@ -1,22 +1,20 @@
 from django.db import models
+
+#from metadata.mixins import MetadataMixin
 #Reads and writes data 
 # Create your models here.
 
-class MyWishName(models.Model):
-   # """ Atypical class defiing a model, derived from the MOdel class."""
+class MyPrayerName(models.Model):
+   input_your_prayer = models.CharField(max_length=30, help_text='Enter your wish')
     
-    #Fields
-    input_your_wish = models.CharField(max_length=30, help_text='Enter your wish')
-    #
     
     #METADATA
-    class Meta
-        ordering =['-input_your_wish']
-    
+    #class Meta(MetadataMixin, models
+        #username = models.CharField(max_length=150)
     #Methods
     
     def get_absolute_url(self):
-        # """Returns the url to access a particular instance of MyModelName."""
+        # """Returns the url to access a particular instance of MyPrayerName."""
         return reverse('model-detail-view', args=[str(self.id)])
     
     def __str__(self):
