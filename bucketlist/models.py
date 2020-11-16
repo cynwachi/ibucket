@@ -1,7 +1,8 @@
 from django.db import models
+from django.urls import reverse
 from django.core.validators import RegexValidator
 from django.db.models.fields import DateTimeField, TextField
-from localflavor.us.models import USSteField, USZipCodeField
+from localflavor.us.models import USStateField, USZipCodeField
 
 #from metadata.mixins import MetadataMixin
 #Reads and writes data 
@@ -29,9 +30,9 @@ class User(models.Model):
        return self.name
 
 class Play(models.Model):
-    text = models.TextField(max_length=150)
+    text = models.TextField(max_length=150, help_text= "Enter Your Play")
     date_time = models.DateTimeField(auto_now_add=False)
-    user = models.ForeignKey(to="User", on_delete=models.CASCADE, related_name="user randomness"
+    user = models.ForeignKey(to="User", on_delete=models.CASCADE, related_name="users")
 
     #METADATA
     #class Meta(MetadataMixin, models
@@ -39,15 +40,15 @@ class Play(models.Model):
     #Methods
     
     def get_absolute_url(self):
-        # """Returns the url to access a particular instance of PlayPray."""
+        # """Returns the url to access a particular instance."""
         return reverse('model-detail-view', args=[str(self.id)])
     
     def __str__(self):
-        #"""String for representing the MyWishName object (in Admin site etc."""
+        #"""String for representing the MyWishName object (in Admin site etc. used any place you "RENDER"    """
         return self.text
     
 class Pray(models.Model):
-        text = models.TextField(max_length=150), help_text='Enter your Play')
+        text = models.TextField(max_length=150)
     
     def get_absolute_url(self):
         # """Returns the url to access a particular instance of Pray."""

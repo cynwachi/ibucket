@@ -1,8 +1,16 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import User
+from .models import Play, User
 from .forms import UserForm, PlayForm, PrayForm, forms
 #receives messages from urls.py and models.py and from the Template loacated at filename.html
 # Create your views here.
+
+
+def home_page(request): 
+    plays = Play.objects.all()
+    prays =Pray.objects.all()
+    return render (request, "users/home.html", 
+                   {"plays": plays, "prays": prays})
+    #make template to match this
 
 def list_users(request):
     users = User.objects.all()
