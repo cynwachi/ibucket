@@ -4,11 +4,13 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+nose = "*"
 
 [packages]
 psycopg2-binary = "*"
 tree = "*"
 django = "*"
+camelcase = "*"
 
 [requires]
 python_version = "3.8"
