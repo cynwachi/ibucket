@@ -1,2 +1,0 @@
-let prays = []
-let plays = []
