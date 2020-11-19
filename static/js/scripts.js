@@ -3,7 +3,7 @@ let plays = document.getElementById("plays");
 let bucketsList = document.getElementById("bucketsList");
 
 let circleMaxSize = 80; 
-let circleMinSize = 70;
+let circleMinSize = 60;
 
 let praysArray = ["hello","Yoyo"];
 let playsArray = ["konnichiwa", "Jeff"];
@@ -44,5 +44,5 @@ for(let bucketChild of buckets) {
     let randomSize = (Math.random() * (circleMaxSize - circleMinSize) + circleMinSize);
     bucketChild.style.width =  randomSize + 'px';
     bucketChild.style.height = randomSize + 'px';
-   
+    //bucketChild.style.left = innerWidth + 'px'
 }
