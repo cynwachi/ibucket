@@ -1,10 +1,8 @@
 from django.contrib import admin
-from .models import BucketItem, DateEntered, DatePicker1, DatePicker2  
+from .models import PrayPlay, User 
 
 # Register your models here.
 
-admin.site.register(BucketItem)
-admin.site.register(DatePicker1)
-admin.site.register(DatePicker2)
-admin.site.register(namesofmodels)
+admin.site.register(PrayPlay)
+admin.site.register(User)
 
