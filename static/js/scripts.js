@@ -3,8 +3,8 @@ let plays = document.getElementById("plays");
 let bucketsList = document.getElementById("bucketsList");
 
 
-let circleMaxSize = 30;
-let circleMinSize = 10;
+let circleMaxSize = 10; 
+let circleMinSize = 7;
 
 let praysArray = ["hello","Yoyo"];
 let playsArray = ["konnichiwa", "Jeff"];

@@ -2,6 +2,7 @@
     background-color: #26B7C4;
     width: 375px;
     height: 812px;
+    margin: auto;
 }
 
 .prays {
@@ -10,7 +11,8 @@
     text-align: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
     display: inline-block;
-    
+    box-sizing: border-box;
+
 }
 
 .plays {
@@ -19,5 +21,6 @@
     text-align: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
     display: inline-block;
+    box-sizing: border-box;
 
 }
