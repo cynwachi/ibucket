@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 from django.urls import reverse
 from django.core.validators import RegexValidator
 from django.db.models.fields import DateTimeField, TextField, CharField
-from localflavor.us.models import USStateField, USZipCodeField
+
 
 #from metadata.mixins import MetadataMixin
 #Reads and writes data 
