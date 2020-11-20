@@ -14,6 +14,9 @@
     </head>
     <body>
     {% block content %}
+    
+{% comment %} <!--what exists here changes per page --> {% endcomment %}
+{% comment %} base html sets up other html pages here by preventing the need to enter header code  {% endcomment %}
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
