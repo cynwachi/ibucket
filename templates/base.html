@@ -1,17 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
 <head>
     {% block meta %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="{% static 'js/scripts.js' %}" defer></script>
+    <!--Material Icons-->
     <link rel="stylesheet" href= "{% static 'styles/styles.css' %}"></link>
+    <!--Local CSS -->
     <link rel="stylesheet" href= "{% static 'styles/styles_homepage.css' %}"></link>
+
+
     {% endblock %}
     {% block title %}<title>iBe</title>{% endblock %}
 </head>
 <body>
-  {% block content %}{% endblock %}
+  {% block content %}
+  {% endblock %}
 </body>
 </html>
