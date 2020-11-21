@@ -1,4 +1,5 @@
 let plays = document.getElementById("plays");
+let prays = document.getElementById("prays");
 let bucketsList = document.getElementById("bucketsList");
 
 
@@ -18,7 +19,7 @@ for (let play of playsArray){                           //Makes a loop for each 
     let elemID = playsArray.indexOf(play);              //Makes a unique ID for the play object
     let newElement = document.createElement('div');     //Creates an object in the page and assigns it to a variable
     newElement.classList.add('plays');                  //Gives the object the class name plays
-@@ -36,14 +35,14 @@ for (let play of playsArray){                           //Makes a loot for each
+for (let play of playsArray){                           //Makes a loot for each
     let elementName = document.createElement('div');    //Creates an object in the page and assigns it to a variable
     elementName.classList.add('name');                  //Gives the object the class name 'name'
     elementName.innerText = play;
@@ -37,4 +38,4 @@ for(let bucketChild of buckets) {
     bucketChild.style.width =  randomSize + 'px';
     bucketChild.style.height = randomSize + 'px';
     //bucketChild.style.left = innerWidth + 'px'
-} 
+}
