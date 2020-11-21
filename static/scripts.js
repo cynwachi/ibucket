@@ -9,7 +9,7 @@ let circleMinSize = 60;
 
 let praysArray = ["hello","Yoyo"];
 let playsArray = ["konnichiwa", "Jeff"];
-@@ -25,7 +24,7 @@ for (let pray of praysArray){
+for (let pray of praysArray){
 }
 
 //Creates an object for each play inside of the buckets div
