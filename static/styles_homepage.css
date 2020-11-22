@@ -1,16 +1,17 @@
-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
-display: inline-block;
-box-sizing: border-box;
-
-vertical-align: middle;
-display: table-cell;
-}
-
 .plays {
-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
-display: inline-block;
-box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
+    display: inline-block;
+    box-sizing: border-box;
 
-vertical-align: middle;
-display: table-cell;
+    vertical-align: middle;
+    display: table-cell;
 }
+
+.prays {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
+    display: inline-block;
+    box-sizing: border-box;
+    
+    vertical-align: middle;
+    display: table-cell;
+    }
