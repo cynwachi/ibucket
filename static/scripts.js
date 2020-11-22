@@ -10,7 +10,8 @@ let circleMinSize = 60;
 
 let praysArray = ["hello","Yoyo"];
 let playsArray = ["konnichiwa", "Jeff"];
-for (let pray of praysArray){
+for (let pray of praysArray) {
+    
 }
 
 //Creates an object for each play inside of the buckets div
@@ -38,4 +39,5 @@ for(let bucketChild of buckets) {
     bucketChild.style.width =  randomSize + 'px';
     bucketChild.style.height = randomSize + 'px';
     //bucketChild.style.left = innerWidth + 'px'
+}
 }
