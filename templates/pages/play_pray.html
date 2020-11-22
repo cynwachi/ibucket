@@ -1,14 +1,25 @@
  {% extends 'base.html' %}
 
 {% block content %}
+<h1> Play Pray </h1>
 
 {% for play in plays %}
 <p> {{play}}</p> 
-{% comment %} simple render to check the wiring p tag renders plays and prays inside make a p tag and show it use shortvut ctrl forward slash to commentout in {% endcomment %}
+
 {% endfor %}
 
 {% for pray in prays %}
-<p> {{play}} </p> 
-{% comment %} simle render to check the wiring p tag renders plays and prays inside make a p tag and show it use shortvut ctrl forward slash to commentout in {% endcomment %}
+<p> {{pray}} </p> 
+
+<!--<div>
+  <form action="{% url 'add_contact' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div>
+      <button type="submit">Add Contact</button>
+    </div>
+  </form>
+</div>
+
 {% endfor %}
 {% endblock %}

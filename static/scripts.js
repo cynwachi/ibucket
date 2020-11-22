@@ -11,10 +11,10 @@ let circleMinSize = 60;
 let praysArray = ["hello","Yoyo"];
 let playsArray = ["konnichiwa", "Jeff"];
 for (let pray of praysArray) {
-    
+
 }
 
-//Creates an object for each play inside of the buckets div
+//Objects
 for (let play of playsArray){                           //Makes a loot for each play bucket their is
 for (let play of playsArray){                           //Makes a loop for each play bucket their is
     let elemID = playsArray.indexOf(play);              //Makes a unique ID for the play object
@@ -39,5 +39,5 @@ for(let bucketChild of buckets) {
     bucketChild.style.width =  randomSize + 'px';
     bucketChild.style.height = randomSize + 'px';
     //bucketChild.style.left = innerWidth + 'px'
-}
+ }}
 }
