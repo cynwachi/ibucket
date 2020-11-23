@@ -17,14 +17,15 @@ for (let pray of praysArray){                           //Makes a loop for each 
     newElement.classList.add('plays');  
     newElement.id = `prays${elemID}`;
     bucketsList.appendChild(newElement);
-    
+
 for (let play of playsArray){                           //Makes a loot for each
     let elementName = document.createElement('div');    //Creates an object in the page and assigns it to a variable
     elementName.classList.add('name');                  //Gives the object the class name 'name'
     elementName.innerText = play;
     newElement.appendChild(elementName);  //Adds a name to the play object
     newElement.appendChild(elementName);                //Adds a name to the pray object
-}}
+}
+}
 
 //Randomizes the size of the circle 
 var buckets = document.getElementById('bucketsList').children;
