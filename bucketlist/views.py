@@ -8,7 +8,7 @@ from .forms import PrayPlayForm
 def home_page(request): 
     plays = [play.text for play in PrayPlay.objects.filter(type="play")]
     prays = [pray.text for pray in PrayPlay.objects.filter(type="pray")]
-    return render (request, "users/home.html", 
+    return render (request, "pages/homepage.html", 
                    {"plays": plays, "prays": prays})
     #make template to match this
 
