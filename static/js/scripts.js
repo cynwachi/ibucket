@@ -1,6 +1,7 @@
 let prays = document.getElementById("prays");
 let plays = document.getElementById("plays");
 let bucketsList = document.getElementById("bucketsList");
+let addBucket =  document.getElementById("add_bucket")
 
 let circleMaxSize = 80; 
 let circleMinSize = 20;
@@ -8,6 +9,7 @@ let circleMinSize = 20;
 let praysArray = ["hello","Yoyo"];
 let playsArray = ["konnichiwa", "ja"];
 let elemIDNames = [];
+
 
 //Creates an object for each pray inside of the buckets div
 for (let pray of praysArray){
@@ -42,10 +44,50 @@ for (let play of playsArray){                           //Makes a loop for each 
 var buckets = document.getElementById('bucketsList').children;
 for(let bucketChild of buckets) {
     let randomSize = ((Math.random() * (circleMaxSize - circleMinSize) + circleMinSize));
-    bucketChild.style.width = 'auto';
+    bucketChild.style.width = randomSize + 'px';
     bucketChild.style.height =  randomSize + 'px';
-    console.log("Width: " + bucketChild.style.width)
-    console.log("Height: " + bucketChild.style.height)
+    //bucketChild.style.left = innerWidth + 'px'
 }
 
-// let randomSize = ((Math.random() * (circleMaxSize - circleMinSize) + circleMinSize));
+// Randomizes the location of the circle
+for(let bucketChild of buckets) {
+    let validLocation = false;
+    let randomX;
+    let randomY; 
+    
+    while(validLocation === false){
+        randomX = ((Math.random() * (xMax - xMin) + xMin));
+        randomY = ((Math.random() * (yMax - yMin) + yMin));
+
+        for(let x in bucketCoordsX){
+            if ((bucketCoordsX[x] + 100) < randomX && (bucketCoordsX - 100) >  randomX){
+                validLocation = true;
+            }else{
+                validLocation = false;
+            }
+        }
+        for(let y in bucketCoordsY){
+            if (randomY > (bucketCoordsY[y] + 100) || randomY < (bucketCoordsY[y] - 100)){
+                validLocation = true;
+            }else{
+                validLocation = false;
+            }
+        }
+        
+    }
+    
+    bucketCoordsX.push(randomX);
+    bucketCoordsY.push(randomY);
+    bucketChild.style.position = "relative";
+    bucketChild.style.left = randomX + 'px';
+    bucketChild.style.top = randomY + 'px'
+
+    if(bucketCoordsX.length == 2){
+
+    }
+    
+    if(bucketCoordsY.length == 2){
+
+    }
+
+}

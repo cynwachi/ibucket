@@ -6,4 +6,3 @@ def viewHompage(request):
 
 def addBucket(request):
     return render(request, "pages/pray_play.html")
-

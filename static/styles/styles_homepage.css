@@ -3,6 +3,21 @@
     width: 375px;
     height: 812px;
     margin: auto;
+    
+}
+
+#add_bucket {
+    background-color:#2BD2E1;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
+    position: relative;
+    left: 250px;
+    top: 80px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-family: Segoe UI; font-size: 24px; font-style: italic; font-variant: normal; font-weight: 100; line-height: 26.4px; } h3 { font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 19.99px; } blockquote { font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 29.99px; } pre { font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.57px; 
 }
 
 .prays {
@@ -10,9 +25,10 @@
     border-radius: 50%;
     text-align: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
-    display: inline-block;
-    box-sizing: border-box;
-    vertical-align: middle;
+     /* or inline-flex */
+    color: white;
+    font-family: Segoe UI; font-size: 24px; font-style: italic; font-variant: normal; font-weight: 100; line-height: 26.4px; } h3 { font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 19.99px; } blockquote { font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 29.99px; } pre { font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.57px; 
+    
     
 }
 
