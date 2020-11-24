@@ -1,21 +1,24 @@
 let prays = document.getElementById("prays");
 let plays = document.getElementById("plays");
 let bucketsList = document.getElementById("bucketsList");
+let addBucket =  document.getElementById("add_bucket")
 
-let circleMaxSize = 80; 
-let circleMinSize = 60;
+let circleMaxSize = 100; 
+let circleMinSize = 80;
 
-let xMax = 95;
-let xMin = 5;
+let xMax = 300;
+let xMin = 50;
 
-let yMax = 95;
-let yMin= 30;
+let yMax = 400;
+let yMin= 112;
 
-let bucketCoords = {};
+let bucketCoordsX = [addBucket.style.left];
+let bucketCoordsY = [addBucket.style.top];
 
-let praysArray = [];
-let playsArray = ["konnichiwa"];
+let praysArray = ["FINALLY!!", "Took like 10 hrs"];
+let playsArray = ["konnichiwa", "hello", "RIP Juice", "RIP Jah"];
 let elemIDNames = [];
+
 
 //Creates an object for each pray inside of the buckets div
 for (let pray of praysArray){
@@ -55,24 +58,45 @@ for(let bucketChild of buckets) {
     //bucketChild.style.left = innerWidth + 'px'
 }
 
-//Randomizes the location of the circle
-// for(let bucketChild of buckets) {
-//     let validLocation = false;
+// Randomizes the location of the circle
+for(let bucketChild of buckets) {
+    let validLocation = false;
+    let randomX;
+    let randomY; 
     
-//     while(validLocation = false){
-//         let randomX = ((Math.random() * (xMax - xMin) + xMin));
-//         let randomY= ((Math.random() * (yMax - yMin) + yMin));
+    while(validLocation === false){
+        randomX = ((Math.random() * (xMax - xMin) + xMin));
+        randomY = ((Math.random() * (yMax - yMin) + yMin));
 
-//         for(let x in bucketCoords){
-//             if (randomX > x + 2 || randomX < x - 2){
-//                 validLocation = true;
-//             }else{
-//                 if (randomY > bucketCoords[x] + 2 || randomY < bucketCoords[x] - 2){
-//                     validLocation = true;
-//                 }
-//             }
-//         }
-//     }
-//     bucketChild.style.objectPosition = randomX + '% ' + randomY + '% ' 
+        for(let x in bucketCoordsX){
+            if ((bucketCoordsX[x] + 100) < randomX && (bucketCoordsX - 100) >  randomX){
+                validLocation = true;
+            }else{
+                validLocation = false;
+            }
+        }
+        for(let y in bucketCoordsY){
+            if (randomY > (bucketCoordsY[y] + 100) || randomY < (bucketCoordsY[y] - 100)){
+                validLocation = true;
+            }else{
+                validLocation = false;
+            }
+        }
+        
+    }
+    
+    bucketCoordsX.push(randomX);
+    bucketCoordsY.push(randomY);
+    bucketChild.style.position = "relative";
+    bucketChild.style.left = randomX + 'px';
+    bucketChild.style.top = randomY + 'px'
 
-// }
+    if(bucketCoordsX.length == 2){
+
+    }
+    
+    if(bucketCoordsY.length == 2){
+
+    }
+
+}
