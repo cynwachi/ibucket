@@ -21,6 +21,7 @@ from core import views as page_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', page_views.viewHompage, name='homepage'),
+    # path('', page_views.addBucket, name='addBucket'),
 ]
 
 if settings.DEBUG:

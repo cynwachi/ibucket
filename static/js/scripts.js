@@ -3,10 +3,10 @@ let plays = document.getElementById("plays");
 let bucketsList = document.getElementById("bucketsList");
 
 let circleMaxSize = 80; 
-let circleMinSize = 60;
+let circleMinSize = 20;
 
 let praysArray = ["hello","Yoyo"];
-let playsArray = ["konnichiwa", "Jeff"];
+let playsArray = ["konnichiwa", "ja"];
 let elemIDNames = [];
 
 //Creates an object for each pray inside of the buckets div
@@ -41,8 +41,11 @@ for (let play of playsArray){                           //Makes a loop for each 
 //Randomizes the size of the circle 
 var buckets = document.getElementById('bucketsList').children;
 for(let bucketChild of buckets) {
-    let randomSize = (Math.random() * (circleMaxSize - circleMinSize) + circleMinSize);
-    bucketChild.style.width =  randomSize + 'px';
-    bucketChild.style.height = randomSize + 'px';
-    //bucketChild.style.left = innerWidth + 'px'
+    let randomSize = ((Math.random() * (circleMaxSize - circleMinSize) + circleMinSize));
+    bucketChild.style.width = 'auto';
+    bucketChild.style.height =  randomSize + 'px';
+    console.log("Width: " + bucketChild.style.width)
+    console.log("Height: " + bucketChild.style.height)
 }
+
+// let randomSize = ((Math.random() * (circleMaxSize - circleMinSize) + circleMinSize));

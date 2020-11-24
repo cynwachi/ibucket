@@ -1,3 +1,66 @@
-.background {
+/* html {  
+    width: 375px;
+    height: 812px;
     background-color: #26B7C4;
+    padding: -2;
+    list-style-type: none;
+}
+
+body {
+  width: 375px;
+  height: 812px;
+  background-color: #707070;
+  background-repeat: repeat-y;
+  background-size: 50% auto;
+  display: inline-block;
+} */
+/* .blue_gray {
+  width: 375px;
+  height: 812px;
+  background: linear-gradient(to left, #26B7C4, #707070);
+} */
+
+.play {
+    width: 20%;
+    border-radius: 50%;
+    line-height: 0;
+    background:#707070;
+    position: relative;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
+}
+
+.play:after{
+  content: " ";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.pray {
+    width: 20%;
+    border-radius: 50%;
+    line-height: 0;
+    background: #2FE2F2;
+    position: relative;
+    left: 25%;
+    right: ;
+    bottom: ; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
+}
+
+.pray:after{
+  content: " ";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.circle-txt{
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: segoe ui; 
+  font-size: 20 em;
+  font-weight: bold;
+  font-color: white;
 }

@@ -13,7 +13,7 @@
     display: inline-block;
     box-sizing: border-box;
     vertical-align: middle;
-    display: table-cell;
+    
 }
 
 .plays {
@@ -24,5 +24,4 @@
     display: inline-block;
     box-sizing: border-box;
     vertical-align: middle;
-    display: table-cell;
 }
