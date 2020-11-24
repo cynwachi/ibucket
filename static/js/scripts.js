@@ -6,8 +6,8 @@ let addBucket =  document.getElementById("add_bucket")
 let circleMaxSize = 80; 
 let circleMinSize = 20;
 
-let praysArray = ["hello","Yoyo"];
-let playsArray = ["konnichiwa", "ja"];
+let praysArray = prays_data;
+let playsArray = plays_data;
 let elemIDNames = [];
 
 

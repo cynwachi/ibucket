@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+{{ plays|json_script:"plays_data" }}
+{{ prays|json_script:"prays_data" }}
+
+<script>
+    const plays_data = JSON.parse(document.getElementById('plays_data').textContent);
+    console.log (plays_data)
+    const prays_data = JSON.parse(document.getElementById('prays_data').textContent);
+</script>
+
     <div class= "background">
         <div id= "add_bucket">
             +bucket
