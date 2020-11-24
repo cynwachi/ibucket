@@ -10,10 +10,11 @@
     border-radius: 50%;
     text-align: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
-    display: inline-block;
-    box-sizing: border-box;
-    vertical-align: middle;
-    display: table-cell;
+     /* or inline-flex */
+
+    
+    
+    
 }
 
 .plays {
@@ -21,8 +22,7 @@
     border-radius: 50%; 
     text-align: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.175);
-    display: inline-block;
-    box-sizing: border-box;
-    vertical-align: middle;
-    display: table-cell;
+     /* or inline-flex */
+
+    
 }
